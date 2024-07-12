@@ -63,9 +63,12 @@ class Mentor {
 
 	void removePerson() {
 
-		System.out.println("Hoe heet de mentor die je wilt verwijderen?");
+// remove mentor from all Arrays when giving name of mentor
+		System.out.print("Hoe heet de mentor die je wilt verwijderen?");
 		Scanner removeInput = new Scanner(System.in);
 		String removeName = removeInput.nextLine();
+
+		//if name given is in the list
 		if (names.contains(removeName)) {
 			int i = names.indexOf(removeName);
 			names.remove(i);
@@ -75,9 +78,23 @@ class Mentor {
 			addresses.remove(i);
 			cities.remove(i);
 			employeeNumbers.remove(i);
+
+			//if it's not in the list.
 		} else {
 			System.out.println(removeName + "is niet gevonden in de database.");
 		}
+	}
+
+	void showLists() {
+		//print all lists
+		System.out.println(names);
+		System.out.println(ages);
+		System.out.println(phoneNumbers);
+		System.out.println(emails);
+		System.out.println(addresses);
+		System.out.println(cities);
+		System.out.println(employeeNumbers);
+
 	}
 }
 
