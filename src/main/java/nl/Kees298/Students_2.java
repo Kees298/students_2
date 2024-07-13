@@ -7,7 +7,7 @@ class Students_2 {
 	public static void main(String[] args) {
 		int choice;
 		Scanner input = new Scanner(System.in);
-		MentorChoice subMenu = new MentorChoice();
+		MentorChoice mentorMenu = new MentorChoice();
 
 		for (; ; ) {
 
@@ -15,6 +15,8 @@ class Students_2 {
 										
 					Wat wil je doen?
 					1. Iets met mentoren.
+					2. Iets met studenten.
+					3. Iets met klassen.
 					0. Programma stoppen.
 										
 					""");
@@ -26,7 +28,7 @@ class Students_2 {
 
 			switch (choice) {
 				case 1:
-					subMenu.Menu();
+					mentorMenu.Menu();
 			}
 
 			//Student newMentor = new Student();

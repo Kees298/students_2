@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ffb98e9c-2b90-48bf-8135-081fc1625a28" name="Changes" comment="show list mentors">
-      <change afterPath="$PROJECT_DIR$/src/main/java/nl/Kees298/MentorChoice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nl/Kees298/Mentor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/Kees298/Mentor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nl/Kees298/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/Kees298/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nl/Kees298/Students_2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/Kees298/Students_2.java" afterDir="false" />
-    </list>
+    <list default="true" id="ffb98e9c-2b90-48bf-8135-081fc1625a28" name="Changes" comment="added submenu (mentors)" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -105,13 +99,22 @@
       <option name="project" value="LOCAL" />
       <updated>1720771937303</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="added submenu (mentors)">
+      <option name="closed" value="true" />
+      <created>1720867311648</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1720867311648</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Empty" />
     <MESSAGE value="add and remove mentors" />
     <MESSAGE value="show list mentors" />
-    <option name="LAST_COMMIT_MESSAGE" value="show list mentors" />
+    <MESSAGE value="added submenu (mentors)" />
+    <option name="LAST_COMMIT_MESSAGE" value="added submenu (mentors)" />
   </component>
 </project>
