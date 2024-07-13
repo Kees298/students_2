@@ -8,14 +8,15 @@ class Students_2 {
 		int choice;
 		Scanner input = new Scanner(System.in);
 		MentorChoice mentorMenu = new MentorChoice();
+		StudentChoice studentMenu = new StudentChoice();
 
 		for (; ; ) {
 
 			System.out.print("""
 										
 					Wat wil je doen?
-					1. Iets met mentoren.
-					2. Iets met studenten.
+					1. Iets met studenten.
+					2. Iets met mentoren.
 					3. Iets met klassen.
 					0. Programma stoppen.
 										
@@ -28,6 +29,8 @@ class Students_2 {
 
 			switch (choice) {
 				case 1:
+					studentMenu.Menu();
+				case 2:
 					mentorMenu.Menu();
 			}
 
