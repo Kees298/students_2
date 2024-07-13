@@ -4,7 +4,7 @@ package nl.Kees298;
 The switch in main directs to 3 sub-switches:
 -a switch in Studentchoice which directs you to the 3 methods in the Class "Student" (or back to main menu)
 -a switch in Mentorchoice which directs you to the 3 methods in the Class "Student" (or back to main menu)
--a switch in Klaschoice (not yet built)
+-a switch in Classchoice (not yet built)
 
  */
 
