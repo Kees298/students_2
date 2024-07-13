@@ -4,14 +4,15 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 class Student {
+
 	//declare variables to be stored in arrays.
 	ArrayList<String> names = new ArrayList<>();
 	ArrayList<Integer> ages = new ArrayList<>();
-	ArrayList<Long> phoneNumbers = new ArrayList<>();
+	ArrayList<String> phoneNumbers = new ArrayList<>();
 	ArrayList<String> emails = new ArrayList<>();
 	ArrayList<String> addresses = new ArrayList<>();
 	ArrayList<String> cities = new ArrayList<>();
-	ArrayList<Long> studentNumbers = new ArrayList<>();
+	ArrayList<String> studentNumbers = new ArrayList<>();
 
 	// add person
 	void addPerson() {
@@ -27,11 +28,10 @@ class Student {
 		ages.add(ageInput.nextInt());
 		System.out.println(ages);
 
-		//add phone numbers line 32 incorrect? p41 of book.
-		System.out.println("Geef het telefoonnummer van de student die je toe wilt voegen");
-		//System.out.print("(Je mag underscores toevoegen voor leesbaarheid): ");
+		//add phone numbers
+		System.out.print("Geef het telefoonnummer van de student die je toe wilt voegen: ");
 		Scanner phoneInput = new Scanner(System.in);
-		phoneNumbers.add(phoneInput.nextLong());
+		phoneNumbers.add(phoneInput.nextLine());
 		System.out.println(phoneNumbers);
 
 		//add e-mails
@@ -53,29 +53,12 @@ class Student {
 		System.out.println(cities);
 
 		//add student numbers
-		System.out.println("Geef het nummer van de student die je toe wilt voegen");
-		//System.out.print("(Je mag underscores toevoegen voor leesbaarheid): ");
+		System.out.print("Geef het nummer van de student die je toe wilt voegen: ");
 		Scanner stNumberInput = new Scanner(System.in);
-		studentNumbers.add(stNumberInput.nextLong());
+		studentNumbers.add(stNumberInput.nextLine());
 		System.out.println(studentNumbers);
-
-
 
 	}
 }
 
 
-
-/*
-void ageList() {
-	int i = ListLength();
-	System.out.println("Geef de leeftijden van de studenten");
-	Scanner ageInput = new Scanner(System.in);
-
-	do {
-		ages.add(ageInput.nextInt());
-	} while (ages.size()<i);
-	System.out.println(ages);
-
-
- */

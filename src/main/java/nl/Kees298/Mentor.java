@@ -5,14 +5,15 @@ import java.util.Scanner;
 
 class Mentor {
 
+
 	//declare variables to be stored in arrays.
 	ArrayList<String> names = new ArrayList<>();
 	ArrayList<Integer> ages = new ArrayList<>();
-	ArrayList<Long> phoneNumbers = new ArrayList<>();
+	ArrayList<String> phoneNumbers = new ArrayList<>();
 	ArrayList<String> emails = new ArrayList<>();
 	ArrayList<String> addresses = new ArrayList<>();
 	ArrayList<String> cities = new ArrayList<>();
-	ArrayList<Long> employeeNumbers = new ArrayList<>();
+	ArrayList<String> employeeNumbers = new ArrayList<>();
 
 	// add person
 	void addPerson() {
@@ -28,11 +29,10 @@ class Mentor {
 		ages.add(ageInput.nextInt());
 		System.out.println(ages);
 
-		//add phone numbers line 32 incorrect? p41 of book.
-		System.out.println("Geef het telefoonnummer van de mentor die je toe wilt voegen");
-		//System.out.print("(Je mag underscores toevoegen voor leesbaarheid): ");
+		//add phone numbers
+		System.out.print("Geef het telefoonnummer van de mentor die je toe wilt voegen: ");
 		Scanner phoneInput = new Scanner(System.in);
-		phoneNumbers.add(phoneInput.nextLong());
+		phoneNumbers.add(phoneInput.nextLine());
 		System.out.println(phoneNumbers);
 
 		//add e-mails
@@ -55,16 +55,15 @@ class Mentor {
 
 		//add employee number
 		System.out.print("Geef het werknemersnummer van de mentor die je toe wilt voegen: ");
-		//System.out.print("(Je mag underscores toevoegen voor leesbaarheid): ");
 		Scanner stNumberInput = new Scanner(System.in);
-		employeeNumbers.add(stNumberInput.nextLong());
+		employeeNumbers.add(stNumberInput.nextLine());
 		System.out.println(employeeNumbers);
 	}
 
 	void removePerson() {
 
-// remove mentor from all Arrays when giving name of mentor
-		System.out.print("Hoe heet de mentor die je wilt verwijderen?");
+		// remove mentor from all Arrays when giving name of mentor
+		System.out.print("Hoe heet de mentor die je wilt verwijderen? ");
 		Scanner removeInput = new Scanner(System.in);
 		String removeName = removeInput.nextLine();
 
@@ -78,10 +77,11 @@ class Mentor {
 			addresses.remove(i);
 			cities.remove(i);
 			employeeNumbers.remove(i);
+			System.out.println(removeName + " is verwijderd uit de database.");
 
 			//if it's not in the list.
 		} else {
-			System.out.println(removeName + "is niet gevonden in de database.");
+			System.out.println(removeName + " is niet gevonden in de database.");
 		}
 	}
 
