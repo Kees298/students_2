@@ -3,16 +3,36 @@ package nl.Kees298;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-class Student {
+public class Student {
+
+	// variables for a single student
+	String name;
+	int age;
+	String phoneNumber;
+	String email;
+	String address;
+	String city;
+	String studentNumber;
 
 	//declare variables to be stored in arrays.
-	ArrayList<String> names = new ArrayList<>();
-	ArrayList<Integer> ages = new ArrayList<>();
-	ArrayList<String> phoneNumbers = new ArrayList<>();
-	ArrayList<String> emails = new ArrayList<>();
-	ArrayList<String> addresses = new ArrayList<>();
-	ArrayList<String> cities = new ArrayList<>();
-	ArrayList<String> studentNumbers = new ArrayList<>();
+	public ArrayList<String> names = new ArrayList<>();
+	public ArrayList<Integer> ages = new ArrayList<>();
+	public ArrayList<String> phoneNumbers = new ArrayList<>();
+	public ArrayList<String> emails = new ArrayList<>();
+	public ArrayList<String> addresses = new ArrayList<>();
+	public ArrayList<String> cities = new ArrayList<>();
+	public ArrayList<String> studentNumbers = new ArrayList<>();
+
+	// constructor for Student
+	Student(String n, int ag, String p, String e, String ad, String c, String s) {
+		name = n;
+		age = ag;
+		phoneNumber = p;
+		email = e;
+		address = ad;
+		city = c;
+		studentNumber = s;
+	}
 
 	// add person
 	void addPerson() {

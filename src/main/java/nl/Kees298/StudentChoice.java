@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 class StudentChoice {
 
-	Student newStudent = new Student();
+	Student newStudent = new Student("", 0, "", "", "", "", "");
 	int choice;
 	Scanner input = new Scanner(System.in);
 
