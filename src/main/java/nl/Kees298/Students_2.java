@@ -30,17 +30,18 @@ class Students_2 {
 					0. Programma stoppen.
 										
 					""");
-			choice = input.nextInt();
 
-			if (choice == 0) {
-				break;
-			}
+			choice = input.nextInt();
 
 			switch (choice) {
 				case 1:
 					studentMenu.Menu();
 				case 2:
 					mentorMenu.Menu();
+			}
+
+			if (choice == 0) {
+				break;
 			}
 
 			//Student newMentor = new Student();

@@ -5,12 +5,18 @@ import java.util.ArrayList;
 
 class Classes {
 
-	//empty student in order to access methods in Student class
+	//create empty student in order to access methods in Student class
 	Student x = new Student("", 0, "", "", "", "", "");
 
 	//declare List of classes array
 	ArrayList<String> classes = new ArrayList<>();
 
+	void almostEmptyStudentList() {
+
+		//add list to first add name of class, then add students to the new class with joinStudent() method
+		ArrayList<String> studentList = new ArrayList<>();
+		studentList.add(input);
+	}
 
 	String input;
 
@@ -18,8 +24,10 @@ class Classes {
 		//add a new class to the array.
 		System.out.print("Hoe heet de nieuwe klas? ");
 		Scanner classInput = new Scanner(System.in);
-		classes.add(classInput.nextLine());
+		String newClass = classInput.nextLine();
+		classes.add(newClass);
 		System.out.println(classes);
+
 	}
 
 	void joinStudent() {
@@ -31,7 +39,7 @@ class Classes {
 		//print the list of students
 		System.out.println(x.names);
 
-		//create a student object
+		//create a student object if the student was added.
 		Scanner StudentInput = new Scanner(System.in);
 		input = StudentInput.nextLine();
 
@@ -40,6 +48,9 @@ class Classes {
 			Student newStudent = new Student(x.names.get(i), x.ages.get(i), x.phoneNumbers.get(i),
 					x.emails.get(i), x.addresses.get(i), x.cities.get(i), x.studentNumbers.get(i));
 			System.out.println(input + " is aangemaakt. Aan welke klas wil je deze persoon toevoegen? ");
+
+			//print list of classes
+			System.out.println(classes);
 		}
 	}
 }
